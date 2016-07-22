@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shopping Guard</string>
+    <string name="cost_string">Ціна</string>
+    <string name="count_string">Кількість</string>
+    <string name="total_string">Вартість</string>
+    <string name="clear_all_string">X</string>
+    <string name="limit_string">Межа витрат:</string>
+</resources>
