@@ -5,4 +5,6 @@
     <string name="total_string">Вартість</string>
     <string name="clear_all_string">X</string>
     <string name="limit_string">Межа витрат:</string>
+    <string name="money_limit_string">Скільки у Вас коштів з собою?</string>
+    <string name="OK_button_string">OK</string>
 </resources>

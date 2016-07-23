@@ -1,5 +1,6 @@
 package com.bpg.shoppingguard;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ViewGroup.LayoutParams lpView;
     TableLayout tableLayout;
     TextView textViewSumOfProducts;
+    TextView textViewLimitValue;
     EditText editTextCost;
     EditText editTextCount;
 
@@ -26,11 +28,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+
 
         lpView = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         tableLayout = (TableLayout) findViewById(R.id.tableLayout);
 
         textViewSumOfProducts = (TextView) findViewById(R.id.textViewSumOfProducts);
+        textViewLimitValue = (TextView) findViewById(R.id.textViewLimitValue);
+        textViewLimitValue.setText(intent.getStringExtra(StartUpActivity.EXTRA_MESSAGE));
+
         editTextCost = (EditText) findViewById(R.id.editTextCost);
         editTextCount = (EditText) findViewById(R.id.editTextCount);
 
