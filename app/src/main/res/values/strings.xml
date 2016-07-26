@@ -7,4 +7,5 @@
     <string name="limit_string">Межа витрат:</string>
     <string name="money_limit_string">Скільки у Вас коштів з собою?</string>
     <string name="OK_button_string">OK</string>
+    <string name="ErrorMoneyLimitValue">Введіть скільки у Вас коштів з собою.</string>
 </resources>

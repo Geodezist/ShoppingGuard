@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tableRow.addView(textViewValue);
             tableRow.addView(buttonDeleteProduct);
 
-            prod = new Product(prodElement, tableRow, textViewCost,textViewCount, textViewValue, buttonDeleteProduct);
+            prod = new Product(prodElement, tableRow, textViewCost, textViewCount, textViewValue, buttonDeleteProduct);
 
             tableLayout.addView(tableRow, lpView);
             allProducts.addProduct(prod);
