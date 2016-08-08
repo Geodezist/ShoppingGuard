@@ -17,12 +17,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/money_limit_string"
         android:id="@+id/textVIewMoneyLimit"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="119dp"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,9 +42,9 @@
         android:layout_height="wrap_content"
         android:text="@string/OK_button_string"
         android:id="@+id/buttonMoneyLimit"
+        android:layout_marginTop="23dp"
+        android:onClick="toMainActivity"
         android:layout_below="@+id/editTextMoneyLimit"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp"
-        android:onClick="toMainActivity" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

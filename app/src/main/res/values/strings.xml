@@ -8,4 +8,7 @@
     <string name="money_limit_string">Скільки у Вас коштів з собою?</string>
     <string name="OK_button_string">OK</string>
     <string name="ErrorMoneyLimitValue">Введіть скільки у Вас коштів з собою.</string>
+    <string name="action_change_limit_value">Змінити межу витрат</string>
+    <string name="action_delete_all">Очистити список</string>
+    <string name="action_exit">Закрити Shopping Guard</string>
 </resources>

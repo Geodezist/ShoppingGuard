@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class StartUpActivity extends AppCompatActivity {
-    public final static String EXTRA_MESSAGE = "com.bpg.shoppingguard.MESSAGE";
+    public final static String LIMIT_VALUE = "com.bpg.shoppingguard.MESSAGE";
     private static final String TAG = "StartUpActivity";
 
     @Override
@@ -23,13 +23,13 @@ public class StartUpActivity extends AppCompatActivity {
 
     public void toMainActivity(View v) {
 
-        String message = ((EditText) findViewById(R.id.editTextMoneyLimit)).getText().toString();
+        String limitValue = ((EditText) findViewById(R.id.editTextMoneyLimit)).getText().toString();
         BigDecimal checkMoneyLimit = BigDecimal.valueOf(-1);
 
         try {
-            checkMoneyLimit = new BigDecimal(message);
+            checkMoneyLimit = new BigDecimal(limitValue);
         } catch (Exception e) {
-            Log.d(TAG, "User input is '" + message + "'. " + e.getLocalizedMessage());
+            Log.d(TAG, "User input is '" + limitValue + "'. " + e.getLocalizedMessage());
         }
 
         if (checkMoneyLimit.compareTo(BigDecimal.ZERO) != 1) {
@@ -38,7 +38,7 @@ public class StartUpActivity extends AppCompatActivity {
             toastErrorMoneyLimitValue.show();
         } else {
             Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra(EXTRA_MESSAGE, message);
+            intent.putExtra(LIMIT_VALUE, limitValue);
             startActivity(intent);
         }
     }
